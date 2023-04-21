@@ -1,0 +1,53 @@
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size
+\documentclass[11pt, a4paper]{russell}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=1cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% russell Colors: russell-emerald, russell-skyblue, russell-red, russell-pink, russell-orange
+%                 russell-nephritis, russell-concrete, russell-darknight, russell-purple
+\colorlet{russell}{russell-black}
+
+% Set false if you don't want to highlight section with russell color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+\name{Federico}{Gualdi}
+\position{Software Engineer}
+
+\mobile{+39 331 1255 401}
+\email{hi@federicogualdi.com}
+\github{github.com/federicogualdi}
+\linkedin{linkedin.com/in/federicogualdi}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makecvheader
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately
+%-------------------------------------------------------------------------------
+\input{cv/profile}
+\input{cv/work-experience}
+\input{cv/side-projects}
+\input{cv/education}
+
+%-------------------------------------------------------------------------------
+\end{document}
