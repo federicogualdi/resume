@@ -474,7 +474,7 @@
         {}%
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \href{https://\@github}{\faGithubSquare\acvHeaderIconSep\@github}%
+          \href{https://github.com/\@github}{\faGithubSquare\acvHeaderIconSep\text{{@}\@github}}%
         }%
       \ifthenelse{\isundefined{\@gitlab}}%
         {}%
@@ -498,7 +498,7 @@
         {}%
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \href{https://www.\@linkedin}{\faLinkedin\acvHeaderIconSep\@linkedin}%
+          \href{https://linkedin.com/in/\@linkedin}{\faLinkedin\acvHeaderIconSep\text{{@}\@linkedin}}%
         }%
       \ifthenelse{\isundefined{\@orcid}}%
         {}%
@@ -700,7 +700,7 @@
   \vspace{-3mm}
   \begin{justify}
   \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
-    \setlength{\parskip}{4pt}
+    \setlength{\parskip}{2pt}
     \renewcommand{\labelitemi}{\bullet}
 }{%
   \end{itemize}
