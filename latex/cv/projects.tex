@@ -11,28 +11,13 @@
 %---------------------------------------------------------
   \cventry
     {Personal Project} % Project type
-    {Reverse Uptime Monitor} % Project name
+    {} % Project name
     {} % Location
     {2025} % Date(s)
     {
       \begin{cvitems}
-        \item {Designed and implemented a reverse uptime monitoring system: the client periodically reports its health status and if it fails to do so within a configurable threshold, a user-defined webhook is triggered.}
-        \item {Architected the solution to run efficiently on free-tier cloud providers, overcoming the absence of a traditional database and optimizing for cost and reliability.}
-        \item {Faced and solved challenges related to stateless design, persistence and event-driven notifications.}
-      \end{cvitems}
-    }
-
-%---------------------------------------------------------
-  \cventry
-    {Personal Project} % Project type
-    {Smart E-Ink Photo Frame} % Project name
-    {} % Location
-    {2024} % Date(s)
-    {
-      \begin{cvitems}
-        \item {Developed a smart e-ink photo frame that displays daily memories: users upload a photo via Telegram, which is processed by an AWS Lambda function at midnight, converted to grayscale binary and stored in S3.}
-        \item {The frame downloads and displays the image at 8am, then enters deep sleep to minimize power consumption, leveraging the e-ink display's low energy profile.}
-        \item {Designed the system for reliability and minimal operational cost, automating the workflow end-to-end.}
+        \item {Reverse uptime monitor: system where clients report their health status; missing signals trigger alerts via webhooks. Stateless, event-driven design on free-tier cloud.}
+        \item {Smart e-ink photo frame: automated system delivering daily images to a physical device via AWS Lambda and S3, optimized for low power consumption.}
       \end{cvitems}
     }
 
